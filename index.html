@@ -1,54 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Swimming Course</title>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <nav>
-          <div class="nav__logo">
-            <a href="index.html">
-              <img src="./img/logo-header.png" alt="Swimming Logo" />
-            </a>
-          </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Swimming Course</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="nav__logo">
+                        <a href="index.html">
+                            <img
+                                src="./img/logo-header.png"
+                                alt="Swimming Logo"
+                            />
+                        </a>
+                    </div>
 
-          <div class="nav__menu hamburger">&equiv;</div>
+                    <div class="nav__menu hamburger">&equiv;</div>
 
-          <ul class="nav__list">
-            <div class="nav__menu back">&raquo;</div>
-            <li class="nav__item">
-              <a href="index.html" class="nav__link">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Course</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Gallery</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+                    <ul class="nav__list">
+                        <div class="nav__menu back">&raquo;</div>
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Course</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Gallery</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <main>
-      <div class="container">
-        <div class="slideshow"></div>
-        <div class="info"></div>
-        <div class="review"></div>
-        <div class="contact"></div>
-      </div>
-    </main>
-    <footer>
-      <h3>Footer</h3>
-    </footer>
-  </body>
+        <main>
+            <div class="container">
+                <div class="slideshow">
+                    <div class="slideshow__slide">
+                        <div class="slideshow__image fade">
+                            <img
+                                src="./img/slideshow-01.jpg"
+                                alt="swimmer-dive-in"
+                            />
+                        </div>
+                        <div class="slideshow__image fade">
+                            <img
+                                src="./img/slideshow-02.jpg"
+                                alt="swimmer-relaxing-underwater"
+                            />
+                        </div>
+                        <div class="slideshow__image fade">
+                            <img
+                                src="./img/slideshow-03.jpg"
+                                alt="swimmer-butterfly-on-water"
+                            />
+                        </div>
+                        <div class="slideshow__image fade">
+                            <img
+                                src="./img/slideshow-04.jpg"
+                                alt="swimmer-butterfly-underwater"
+                            />
+                        </div>
+                        <a class="slideshow__arrow slideshow__arrow--prev"
+                            >&#10094;</a
+                        >
+                        <a class="slideshow__arrow slideshow__arrow--next"
+                            >&#10095;</a
+                        >
+                    </div>
+
+                    <div class="slideshow__indicator">
+                        <span class="slideshow__dot"></span>
+                        <span class="slideshow__dot"></span>
+                        <span class="slideshow__dot"></span>
+                        <span class="slideshow__dot"></span>
+                    </div>
+                </div>
+
+                <div class="info"></div>
+                <div class="review"></div>
+                <div class="contact"></div>
+            </div>
+        </main>
+        <footer>
+            <h3>Footer</h3>
+        </footer>
+    </body>
 </html>
