@@ -8,7 +8,7 @@
     <body>
         <header>
             <div class="container">
-                <nav>
+                <nav class="nav">
                     <div class="nav__logo">
                         <a href="index.html">
                             <img
@@ -44,7 +44,7 @@
 
         <main>
             <div class="container">
-                <div class="slideshow">
+                <section class="slideshow">
                     <div class="slideshow__slide">
                         <div class="slideshow__image fade">
                             <img
@@ -64,12 +64,6 @@
                                 alt="swimmer-butterfly-on-water"
                             />
                         </div>
-                        <div class="slideshow__image fade">
-                            <img
-                                src="./img/slideshow-04.jpg"
-                                alt="swimmer-butterfly-underwater"
-                            />
-                        </div>
                         <a class="slideshow__arrow slideshow__arrow--prev"
                             >&#10094;</a
                         >
@@ -82,17 +76,158 @@
                         <span class="slideshow__dot"></span>
                         <span class="slideshow__dot"></span>
                         <span class="slideshow__dot"></span>
-                        <span class="slideshow__dot"></span>
                     </div>
-                </div>
+                </section>
 
-                <div class="info"></div>
-                <div class="review"></div>
-                <div class="contact"></div>
+                <section class="info">
+                    <div class="info__introduction">
+                        <h2>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </h2>
+                    </div>
+
+                    <div class="info__course">
+                        <div class="info__course__content">
+                            <img
+                                class="info__course__image"
+                                src="./img/square-01.jpg"
+                                alt="Our male instructor"
+                            />
+                            <div
+                                class="info__course__text info__course__text--left"
+                            >
+                                <h3>
+                                    Welcome to our school ^_^
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Laudantium architecto
+                                    fugiat quisquam qui, dolor quibusdam
+                                    voluptatibus! Aperiam possimus voluptate
+                                    earum. voluptatibus!
+                                </p>
+                                <button class="info__course__button--1">
+                                    Learn more ...
+                                </button>
+                            </div>
+                        </div>
+                        <div class="info__course__content">
+                            <img
+                                class="info__course__image"
+                                src="./img/square-02.jpg"
+                                alt="Floating girl in the pool"
+                            />
+                            <div class="info__course__text">
+                                <h3>
+                                    Why our course is #1 in town
+                                </h3>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                                <button class="info__course__button--2">
+                                    Learn more ...
+                                </button>
+                            </div>
+                        </div>
+                        <div class="info__course__content">
+                            <img
+                                class="info__course__image"
+                                src="./img/square-03.jpg"
+                                alt="Kids have fun in pool"
+                            />
+                            <div
+                                class="info__course__text info__course__text--left"
+                            >
+                                <h3>
+                                    Suitable course for every ages
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Dolorem quo corporis
+                                    recusandae officia iste tempora quod
+                                    veritatis provident ab autem! veritatis
+                                    provident ab autem!
+                                </p>
+                                <button class="info__course__button--3">
+                                    Learn more ...
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="review">
+                    <div class="review__box">
+                        <img src="./img/reviewer-01.jpg" alt="A diving guy" />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                        <h4>Someguy</h4>
+                    </div>
+                    <div class="review__box">
+                        <img
+                            src="./img/reviewer-02.jpg"
+                            alt="Backstroke technique by a girl"
+                        />
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Numquam suscipit sint qui impedit, facere
+                            libero ut.
+                        </p>
+                        <h4>Somegirl</h4>
+                    </div>
+                    <div class="review__box">
+                        <img
+                            src="./img/reviewer-03.jpg"
+                            alt="Kid on front crawl technique"
+                        />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolorum cumque quisquam quod.
+                        </p>
+                        <h4>Somekid</h4>
+                    </div>
+                </section>
+
+                <section class="contact">
+                    <div class="contact__map">
+                        <iframe
+                            frameborder="0"
+                            style="border: 0;"
+                            src="https://www.google.com/maps/embed/v1/place?q=10.7620606%2C%20106.6794933&key=AIzaSyDRs0Y1ezc0Izf5EBFGPj4gZcYL4tR-fwA"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <div class="contact__details">
+                        <div class="contact__details__email">
+                            <span></span>
+                            <h3>Email</h3>
+                            <a href="#">nevermore@icloud.com</a>
+                        </div>
+                        <div class="contact__details__phone">
+                            <span></span>
+                            <h3>Phone</h3>
+                            <span>0380501806</span>
+                        </div>
+                        <div class="contact__details__address">
+                            <span></span>
+                            <h3>Address</h3>
+                            <span>Lorem ipsum dolor sit amet consectetur.</span>
+                        </div>
+                    </div>
+                </section>
             </div>
         </main>
         <footer>
-            <h3>Footer</h3>
+            <div class="container">
+                <h1>Code from scratch by <span>&copy</span> Phan Tri</h1>
+            </div>
         </footer>
     </body>
 </html>
