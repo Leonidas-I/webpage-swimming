@@ -22,7 +22,10 @@ getElement(".slideshow__arrow--next")[0].addEventListener("click", () => {
     goSlide__arrowClick(1);
 });
 
-const goSlide__arrowClick = (n) => showSlide((slideIndex += n));
+const goSlide__arrowClick = (n) => {
+    showSlide((slideIndex += n));
+    clearInterval(interval__slide);
+};
 
 /* Navigate SlideShow With Event Delegation on Dot-click */
 getElement(".slideshow__indicator")[0].addEventListener("click", (e) => {
@@ -33,7 +36,8 @@ getElement(".slideshow__indicator")[0].addEventListener("click", (e) => {
     }
 });
 
-let slideIndex = 1;
+let slideIndex = 0;
+let interval__slide;
 const slides = getElement(".slideshow__image");
 const dots = getElement(".slideshow__dot");
 
@@ -52,4 +56,22 @@ const showSlide = (n) => {
     dots[slideIndex - 1].style.opacity = "1";
 };
 
-showSlide(slideIndex);
+// showSlide(slideIndex);
+
+const autoSlide = () => {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        dots[i].style.opacity = "0.6";
+    }
+    slideIndex++;
+    slideIndex > slides.length
+        ? (slideIndex = 1)
+        : slideIndex < 1
+        ? (slideIndex = slides.length)
+        : slideIndex;
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].style.opacity = "1";
+};
+
+autoSlide();
+interval__slide = setInterval(autoSlide, 2000);
